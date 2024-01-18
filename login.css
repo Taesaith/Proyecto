@@ -1,0 +1,119 @@
+*{
+	box-sizing: border-box
+}
+html{
+    min-height: 100%;
+    position: relative;
+}
+html, body, #menu{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+	padding: 0;
+	margin: 0;
+}
+body{
+    background: #000;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+	margin-bottom: 20px;
+}
+.wrapper {
+	width: 80%;
+	margin: auto;
+	overflow:hidden;
+}
+header {
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+}
+
+nav{
+    display: flex;
+    background-color: #212233;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+	border-bottom: 1px solid #9a9a9a;
+	height: 50px;
+	float: left;
+	width: 100%;
+}
+nav a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#href{
+    display: flex;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    overflow: hidden;
+    text-align: end;
+}
+
+nav h1{
+	margin-left: 50px;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 3px;
+}
+#contenido{
+	display: grid;
+	background-image: url(images/fondows.jpg);
+	background-size: cover;
+	color: #FFFFFF;
+	background-repeat: no-repeat;
+	padding-top: 80px;
+    height: 100%;
+}
+
+form {
+	position: relative;
+	z-index: 1;
+	color: #FFFFFF;
+	background: #212233;
+	max-width: 360px;
+	margin: 85px auto 100px;
+	padding: 45px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+form input.ss {
+	font-family: "Roboto", sans-serif;
+	outline: 0;
+	background: #171727;
+	width: 100%;
+	color: #FFFFFF;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+	border: 1px solid #353436;
+}
+.sn{
+	font-family: "Roboto", sans-serif;
+	outline: 0;
+	background: #bc64e4;
+	width: 100%;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+	border: none;
+}
+form a {
+	font-family: "Roboto", sans-serif;
+	color: #bc64e4;
+	transition: all 0.3 ease;
+	cursor: pointer;
+}
+footer {
+	color:#d3d3d3;
+	text-align: center;
+	background-color: #212233;
+	padding: 1px;;
+}

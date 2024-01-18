@@ -1,0 +1,396 @@
+*{
+	box-sizing: border-box
+}
+html{
+    min-height: 100%;
+    position: relative;
+}
+html, body, #menu{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+	padding: 0;
+	margin: 0;
+}
+body{
+    background: #000;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+	margin-bottom: 20px;
+}
+.wrapper {
+	width: 80%;
+	margin: auto;
+	overflow:hidden;
+}
+header {
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+}
+
+nav{
+    display: flex;
+    background-color: #212233;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+	border-bottom: 1px solid #9a9a9a;
+	height: 50px;
+	float: left;
+	width: 100%;
+}
+#href{
+    display: flex;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    overflow: hidden;
+    text-align: end;
+}
+
+form{
+	border-radius: 100px;
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#buscador1{
+    border: none;
+	padding: 5px;
+}
+.imgs{
+	width: 15px;
+	height: 15px;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+.btnbuscador{
+	background: none;
+	border: none;
+}
+#cuentas{
+	flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#inicio{
+	position: absolute;
+	right: 20px;
+	background-color: #bc64e4;
+	padding: 10px;
+	border-radius: 8px;
+	border: none;
+}
+.login{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.txtcampeones{
+	color: #bc64e4;
+	border-right: solid 3px #bc64e4;
+	padding: 5px;
+	margin-top: 5px;
+}
+#menulateral{
+	background-color: #212233;
+	color: #FFFFFF;
+	height: 100%;
+	top: 0;
+	left: 0;
+	width: 200px;
+	box-sizing: border-box;
+	overflow: hidden;
+	vertical-align: middle;
+	display: inline-block;
+	z-index: 100;
+	width: max(8%, 200px);
+	position: fixed;
+}
+#menulateral a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#menulateral h2{
+	margin-top: 0;
+	text-align: center;
+	padding: 10px;
+	letter-spacing: 3px;
+}
+#menu-items{
+	display: inline-block;
+	overflow: hidden;
+	width: 100%;
+	justify-content: space-evenly;
+}
+#menu-items a{
+	display: block;
+}
+#menu-items a:hover{
+	color: #bc64e4;
+	border-right: solid 3px #bc64e4;
+}
+.item{
+	font-size: 20px;
+}
+.txt{
+	padding: 5px;
+	margin-top: 5px;
+}
+#i2{
+	margin-top: 356px;
+}
+.contenido{
+	display: grid;
+	background-image: url(../images/fondows.jpg);
+	color: #FFFFFF;
+	padding-top: 80px;
+}
+.contenido h1{
+	margin-left: 280px;
+}
+
+#camplist {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 30px;
+	margin-left: 20px;
+}
+
+.camp {
+    background-color: #ffffff17;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+	width: 250px;
+	border-radius: 10px;
+		border: #9a9a9a 2px solid;
+}
+.camp p{
+	margin: 0;
+}
+.imgcamp{
+	border: solid #bc64e4 5px;
+}
+.camp h2{
+	color: #bc64e4;
+}
+.camp:hover{
+	border: solid #bc64e4 2px;
+}
+.camp#aatrox{
+	background-image:url(../images/Aatrox_02\ \(1\).jpg);
+	background-size: cover;
+}
+.camp#Ahri{
+	background-image:url(../images/Ahri_0.jpg);
+	background-size: cover;
+}
+.camp#Akali{
+	background-image:url(../images/RiotX_ChampionList_akali.jpg);
+	background-size: cover;
+}
+.camp#Akshan{
+	background-image:url(../images/RiotX_ChampionList_akshan_v2.jpg);
+	background-size: cover;
+}
+.camp#Alistar{
+	background-image:url(../images/RiotX_ChampionList_alistar.jpg);
+	background-size: cover;
+}
+.camp#Amumu{
+	background-image:url(../images/RiotX_ChampionList_amumu.jpg);
+	background-size: cover;
+}
+.camp#Anivia{
+	background-image:url(../images/RiotX_ChampionList_anivia.jpg);
+	background-size: cover;
+}
+.camp#Annie{
+	background-image:url(../images/RiotX_ChampionList_annie.jpg);
+	background-size: cover;
+}
+.camp#Aphelios{
+	background-image:url(../images/Aphelios_0\ \(1\).jpg);
+	background-size: cover;
+}
+.camp#Ashe{
+	background-image:url(../images/RiotX_ChampionList_ashe.jpg);
+	background-size: cover;
+}
+.camp#Aurelion_Sol{
+	background-image:url(../images/RiotX_ChampionList_aurelionsol.jpg);
+	background-size: cover;
+}
+.camp#Azir{
+	background-image:url(../images/RiotX_ChampionList_azir.jpg);
+	background-size: cover;
+}
+.camp#bardo{
+	background-image:url(../images/RiotX_ChampionList_bard.jpg);
+	background-size: cover;
+}
+.camp#BelVeth{
+	background-image:url(../images/RiotX_ChampionList_belveth.jpg);
+	background-size: cover;
+}
+.camp#Blitzcrank{
+	background-image:url(../images/RiotX_ChampionList_blitzcrank.jpg);
+	background-size: cover;
+}
+.camp#Brand{
+	background-image:url(../images/RiotX_ChampionList_brand.jpg);
+	background-size: cover;
+}
+.camp#Braum{
+	background-image:url(../images/RiotX_ChampionList_braum.jpg);
+	background-size: cover;
+}
+.camp#Caitlyn{
+	background-image:url(../images/RiotX_ChampionList_caitlyn_v2.jpg);
+	background-size: cover;
+}
+.camp#Camille{
+	background-image:url(../images/RiotX_ChampionList_camille.jpg);
+	background-size: cover;
+	background-position: right;
+}
+.camp#Cassiopeia{
+	background-image:url(../images/RiotX_ChampionList_cassiopeia.jpg);
+	background-size: cover;
+}
+.camp#ChoGath{
+	background-image:url(../images/RiotX_ChampionList_chogath.jpg);
+	background-size: cover;
+}
+.camp#Corki{
+	background-image:url(../images/RiotX_ChampionList_corki.jpg);
+	background-size: cover;
+}
+.camp#Darius{
+	background-image:url(../images/RiotX_ChampionList_darius.jpg);
+	background-size: cover;
+}
+.camp#Diana{
+	background-image:url(../images/RiotX_ChampionList_diana.jpg);
+	background-size: cover;
+}
+.camp#Draven{
+	background-image:url(../images/RiotX_ChampionList_draven.jpg);
+	background-size: cover;
+}
+.camp#DrMundo{
+	background-image:url(../images/RiotX_ChampionList_drmundo_v2.jpg);
+	background-size: cover;
+}
+.camp#Ekko{
+	background-image:url(../images/RiotX_ChampionList_ekko.jpg);
+	background-size: cover;
+}
+.camp#Elise{
+	background-image:url(../images/RiotX_ChampionList_elise.jpg);
+	background-size: cover;
+}
+.camp#Evelynn{
+	background-image:url(../images/RiotX_ChampionList_evelynn.jpg);
+	background-size: cover;
+}
+.camp#Ezreal{
+	background-image:url(../images/RiotX_ChampionList_ezreal.jpg);
+	background-size: cover;
+}
+.camp#Fiddlesticks{
+	background-image:url(../images/RiotX_ChampionList_fiddlesticks_v2.jpg);
+	background-size: cover;
+}
+.camp#Fiora{
+	background-image:url(../images/RiotX_ChampionList_fiora.jpg);
+	background-size: cover;
+}
+.camp#Fizz{
+	background-image:url(../images/RiotX_ChampionList_fizz.jpg);
+	background-size: cover;
+}
+.camp#Galio{
+	background-image:url(../images/RiotX_ChampionList_galio.jpg);
+	background-size: cover;
+}
+.camp#Gangplank{
+	background-image:url(../images/RiotX_ChampionList_gangplank.jpg);
+	background-size: cover;
+}
+.camp#Garen{
+	background-image:url(../images/RiotX_ChampionList_garen.jpg);
+	background-size: cover;
+}
+.camp#Gnar{
+	background-image:url(../images/RiotX_ChampionList_gnar.jpg);
+	background-size: cover;
+}
+.camp#Gragas{
+	background-image:url(../images/RiotX_ChampionList_gragas.jpg);
+	background-size: cover;
+}
+.camp#Graves{
+	background-image:url(../images/RiotX_ChampionList_graves-cigar.jpg);
+	background-size: cover;
+}
+.camp#Gwen{
+	background-image:url(../images/RiotX_ChampionList_gwen.jpg);
+	background-size: cover;
+}
+
+.cn-a{
+	margin-top: 152px;
+}
+.filtros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	width: max-content;
+	background-color: #212233;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+#roles{
+	width: 200px;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	margin-left: 10px;
+}
+#text-input{
+	background: transparent;
+	border: none;
+	font-size: 16px;
+	font-family: Verdana;
+}
+.image-box {
+    flex: 0 0 calc(16.666% - 10px);
+}
+
+.image-box img {    
+    height: auto;
+	margin-top: 2px;
+}
+.bound{
+	color: #bc64e4;
+}
+#text-input::placeholder{
+	color: #bbbbbb;
+}
+#LGO{
+	background-color: #212233;
+    width: max-content;
+    margin-left: 280px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 20px
+}

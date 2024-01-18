@@ -1,0 +1,173 @@
+*{
+	box-sizing: border-box
+}
+html{
+    min-height: 100%;
+    position: relative;
+}
+html, body, #menu{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+	padding: 0;
+	margin: 0;
+}
+body{
+    background: #000;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+	margin-bottom: 20px;
+}
+.wrapper {
+	width: 80%;
+	margin: auto;
+	overflow:hidden;
+}
+header {
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+}
+
+nav{
+    display: flex;
+    background-color: #212233;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+	border-bottom: 1px solid #9a9a9a;
+	height: 50px;
+	float: left;
+	width: 100%;
+}
+#href{
+    display: flex;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    overflow: hidden;
+    text-align: end;
+}
+
+form{
+	border-radius: 100px;
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#buscador1{
+    border: none;
+	padding: 5px;
+}
+.imgs{
+	width: 15px;
+	height: 15px;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+.btnbuscador{
+	background: none;
+	border: none;
+}
+#cuentas{
+	flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#inicio{
+	position: absolute;
+	right: 20px;
+	background-color: #bc64e4;
+	padding: 10px;
+	border-radius: 8px;
+	border: none;
+}
+.login{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.txtItems{
+	color: #bc64e4;
+	border-right: solid 3px #bc64e4;
+	padding: 5px;
+	margin-top: 5px;
+}
+#menulateral{
+	background-color: #212233;
+	color: #FFFFFF;
+	height: 100%;
+	top: 0;
+	left: 0;
+	width: 200px;
+	box-sizing: border-box;
+	overflow: hidden;
+	vertical-align: middle;
+	display: inline-block;
+	z-index: 100;
+	width: max(8%, 200px);
+	position: fixed;
+}
+#menulateral a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#menulateral h2{
+	margin-top: 0;
+	text-align: center;
+	padding: 10px;
+	letter-spacing: 3px;
+}
+#menu-items{
+	display: inline-block;
+	overflow: hidden;
+	width: 100%;
+	justify-content: space-evenly;
+}
+#menu-items a{
+	display: block;
+}
+#menu-items a:hover{
+	color: #bc64e4;
+	border-right: solid 3px #bc64e4;
+}
+.item{
+	font-size: 20px;
+}
+.txt{
+	padding: 5px;
+	margin-top: 5px;
+}
+#i2{
+	margin-top: 356px;
+}
+.contenido{
+	display: grid;
+	background-image: url(../images/fondows.jpg);
+	color: #FFFFFF;
+	padding-top: 80px;
+}
+#cnt{
+	width: 1150px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 0 300px auto;
+    overflow: hidden;
+	background-color: #212233;
+	margin-bottom: 30px;
+}
+.nubs{
+	width: 50px;
+	height: 50px;
+	border: #c1b4c7 2px solid;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+#cnt h2{
+	border-left: 4px solid #bc64e4;
+}
